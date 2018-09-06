@@ -1,0 +1,6 @@
+<h2>
+  api works!
+</h2>
+<ul>
+<div *ngIf="ohlc.open.price > 0; else elseBlock">{{ohlc.open.price}}</div>
+<ng-template #elseBlock>wrong_iput</ng-template>
